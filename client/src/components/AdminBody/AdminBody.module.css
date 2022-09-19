@@ -1,0 +1,49 @@
+.adminBody{
+    height: 65vh;
+    width:89.5%;
+    margin: 1rem 3rem 1rem 5rem;
+    box-shadow:  3px 3px 16px 0px rgba(31, 31, 31, 0.422);
+    border-radius: 5px;
+    padding: 4rem 5rem 5rem 12rem;
+    
+}
+
+.button {
+    margin: 2rem 2rem 2rem 2rem;
+    position: relative;
+    background-color: #6437a0;
+    border:solid white 2px;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 16rem;
+    height: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:after {
+    content: "";
+    background: #a684d2ac;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }

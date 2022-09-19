@@ -1,0 +1,81 @@
+.signIn{
+  font-size: xx-large;
+  color:#6437a0ac;
+  margin-left: 3rem;
+  padding-top: 1.8rem;
+  font-weight: bolder;
+}
+
+.formdiv{
+    height: 65vh;
+    width:40%;
+    margin: 1rem 1rem 1rem 1rem;
+    box-shadow:  3px 3px 16px 0px rgba(31, 31, 31, 0.422);
+    border-radius: 5px;
+    float: left;
+}
+form{
+    margin: 1rem 1rem 0rem 1rem;
+}
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.username{
+  margin: 1rem 1rem 1rem 2rem;
+  font:larger;
+}
+.username2{
+  margin: 1rem 1rem 1rem 2rem;
+}
+.inputbox{
+  margin: 0.5rem 1rem 1.5rem 2rem;
+  padding: 5px 5px;
+  width: 90%;
+  font-size: xx-large;
+  border-radius: 10px;
+  border-color: white;
+  box-shadow: 3px 3px 16px 0px rgba(50, 50, 50, 0.29);
+}
+input[type=password] {
+  width: 90%;
+  height: 50px;
+  padding: 5px 5px;
+  margin: 0rem 0rem 2rem 2rem;
+  border-color: white;
+  font-size: xx-large;
+  border-radius: 10px;
+  box-shadow: 3px 3px 16px 0px rgba(50, 50, 50, 0.29);
+
+}
+
+.inputSubmit{
+  width: 90%;
+  height: 50px;
+  padding: 5px 5px;
+  margin: 0rem 0rem 2rem 2rem;
+  border-color: white;
+  background-color:  #6437a0;
+  color: white;
+  font-weight: bolder;
+  font-size: xx-large;
+  border-radius: 10px;
+  box-shadow: 3px 3px 16px 0px rgba(50, 50, 50, 0.29);
+}
+.inputSubmit:hover{
+  color:  #6437a0;;
+  border-color: #6437a0;
+  background-color:  #6437a06b;
+}
