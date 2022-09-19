@@ -28,7 +28,7 @@ app.use('/api/notice',notice);
 app.use('/api/admin',admin);
 
 app.get("/",  (req, res)=> {
-    app.use(express.static(path.resolve(__dirname,'client','build')))
+    app.use(express.static(path.resolve(__dirname,'client','build','static')))
    res.sendFile(path.resolve(__dirname,'client','build','index.html'))
 });
 
