@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
 })
 router.get('/AndTags', async (req, res) => {
     const querypram = req.query
-    const tagsArray = querypram.Tags.split("-");
+    const tagsArray = querypram.Tags.split(" ");
     Notice.find({Tags:{$all :tagsArray}}).sort({IssueDate: querypram.order || -1}).limit(querypram.limit || 10)
 
     .then(result =>{
@@ -32,7 +32,7 @@ router.get('/AndTags', async (req, res) => {
 })
 router.get('/OrTags', async (req, res) => {
     const querypram = req.query
-    const tagsArray = querypram.Tags.split("-");
+    const tagsArray = querypram.Tags.split(" ");
     Notice.find({Tags:{$in :tagsArray}}).sort({IssueDate: querypram.order || -1}).limit(querypram.limit || 10)
 
     .then(result =>{
