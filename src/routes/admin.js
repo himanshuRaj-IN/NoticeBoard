@@ -88,7 +88,6 @@ router.delete('/notice', verifyAccessToken, (req, res, next) =>{
         res.status(500).send({msg : "Error"});
     })
 })
-
 router.post('/addAdmin', verifyAccessToken, async (req, res, next) => {
     try {
         const cookies = req.cookies;

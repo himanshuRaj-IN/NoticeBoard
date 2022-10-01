@@ -30,7 +30,7 @@ const NoticeModel = new mongoose.Schema({
         required : true
     },
     LastModifiedOn :{
-        type : Date,
+        type : String,
         required : true
     },
     PostedBy : {
