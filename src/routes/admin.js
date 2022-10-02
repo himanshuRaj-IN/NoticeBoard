@@ -80,8 +80,12 @@ router.delete('/notice', verifyAccessToken, (req, res, next) =>{
     const querypram = req.query
     Notice.findOneAndDelete({RefNo:querypram.RefNo})
     .then(result =>{
-        console.log('Deleted Successfully');
-        res.status(200).send({message : 'Deleted Sucessfully'});
+        if(result !== null){
+            res.status(200).send({msg : 'Deleted Sucessfully'});
+        }else{
+            res.status(200).send({msg : "Error"});
+        }
+        
     })
     .catch(err =>{
         console.log(err);
